@@ -48,7 +48,7 @@ Users should be able to:
 
 ### What I learned
 
-This was a fairly straight forward challenge, i utilized the BEM naming Methodology in combination with SCSS as i found that it provided the best way to make my CSS styles modular and reusable. I also utilized a 4-1 SCSS architecture inspired by **Matthew Elsom** to keep all my SCSS files organized. Implementing such an architecture helped in the modularity and reusability of my styles as mentioned above. 
+This was a fairly straight forward challenge, i utilized the BEM naming Methodology in combination with scss as i found that it provided the best way to make my CSS styles modular and reusable. I also utilized a 4-1 scss architecture inspired by **Matthew Elsom** to keep all my scss files organized. Implementing such an architecture helped in the modularity and reusability of my styles as mentioned above. 
 
 On of the code snippets that illustrate this modular and reuseable approach the best i believe is the mixin i created for my button styles:
 
@@ -101,7 +101,7 @@ With this mixin i defined the base styles for my button with the active & hover 
 }
 ```
 
-Another way i added to the modularity to this project was utilizing functional naming for my scss color variables. I first defined a color pallette with descriptive naming :
+Another way i added to the modularity to this project was utilizing functional naming for my scss color variables. I first defined a color pallette with descriptive naming:
 
 ```SCSS
   // Descriptive naming
@@ -113,6 +113,7 @@ Another way i added to the modularity to this project was utilizing functional n
 
 Then i used the descriptive named variables in new variables that described the  descriptively named color variables function in my style sheet:
 ```SCSS
+  // Functional naming
   $border-color:$color-black;
   $header-bg-color:$lily-white;
   $main-btn-bg-color:$hot-pink;
@@ -123,14 +124,14 @@ This approach made my scss more readable, and reusable.
 
 ### Continued development
 
-This project was good in practicing how to organize my SCSS efficiently. Although some organizational choices were a bot overkill for a simple landing page, it offered me the ability to practice this architectural concepts which i plan to use i larger projects going forward.
+This project was good in practicing how to organize my scss efficiently. Although some organizational choices were a bot overkill for a simple landing page, it offered me the ability to practice this architectural concepts which i plan to use i larger projects going forward.
 
 
 ### Useful resources
 
-- [matthewelsom](https://matthewelsom.com/blog/simple-scss-playbook.html) - This gave me a strong foundation for implementing the 4-1 SCSS architecture i utilise in the project. I really liked the approach and will use it going forward.
+- [Matthew Elsom's Blog](https://matthewelsom.com/blog/simple-scss-playbook.html) - This gave me a strong foundation for implementing the 4-1 scss architecture i utilise in the project. I really liked the approach and will use it going forward.
 
-- [sitepoint](hhttps://www.sitepoint.com/managing-responsive-breakpoints-sass/) - This is an amazing article which helped me understand how to use make scalable media queries with scss. I'd recommend it to anyone still trying to come to grips to how to efficiently implement scss mixins with media queries
+- [Sitepoint](hhttps://www.sitepoint.com/managing-responsive-breakpoints-sass/) - This is an amazing article which helped me understand how to use make scalable media queries with scss. I'd recommend it to anyone still trying to come to grips to how to efficiently implement scss mixins with media queries.
 
 
 ## Author
