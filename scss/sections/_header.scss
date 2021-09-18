@@ -1,0 +1,59 @@
+.header{
+    padding-top: 3.5rem;
+    margin-bottom: 6rem;
+    padding-bottom: 6rem;
+    background-color: $header-bg-color;
+    background-image: url(/images/bg-hero-desktop.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+
+    @include respond-to(xs){
+        padding-top: 1.5rem;
+    }
+}
+
+.hero{
+    @include flex-center-vert;
+
+    @include respond-to (sm){
+        @include flex-center-column;
+        text-align: center;
+        margin-right: 0rem;
+    }
+
+    &__img-box{
+        width: 140%;
+
+        @include respond-to (sm){
+             width: 100%;
+            margin-top: 3rem;
+        }
+    }
+
+    &__heading{
+        margin-bottom: 2rem;
+
+        @include respond-to(xs){
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__para{
+        margin-bottom: 2rem;
+
+        @include respond-to(xs){
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__txt-box{
+        margin-right: 3.5rem;
+
+        @include respond-to (sm){
+            margin-right: 0rem;
+        }
+    }
+}

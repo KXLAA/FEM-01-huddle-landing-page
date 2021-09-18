@@ -1,0 +1,111 @@
+.footer{
+    color: $lily-white;
+    background-color: $daintree;
+    z-index: -1;
+    padding: 5rem;
+    padding-top: 10rem;
+
+    @include respond-to(md){
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    @include respond-to(xs){
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    &__container{
+        @include flex-center-horiz;
+        justify-content: space-between;
+
+        @include respond-to(md){
+            @include flex-column;
+        }
+    }
+
+    &__logo{
+        margin-bottom: 2rem
+    }
+
+    &__col{
+        list-style: none;
+        padding: 0%;
+        margin: 0%;
+
+        &--sm{
+            width: 45%;
+
+            @include respond-to(md){
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    &__link-items{
+        margin-bottom: 1rem;
+    }
+
+    &__item-container{
+        @include flex-center-vert; 
+        margin-bottom: 1rem;
+    }
+
+    &__item-img{
+        padding-right: 1rem;
+    }
+
+
+    &__social-links{
+        @include respond-to(md){
+            text-align: center;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+    }
+
+    &__social-icon{
+        margin-left: 1rem;
+        padding: 0.6rem;
+        border: 0.1rem solid white;
+        border-radius: 50em;
+        transition: all 0.3s ease;
+    
+        &:hover {
+            color:lighten($main-btn-bg-color, 8%);
+            border-color:$main-btn-bg-color;
+            transform: translateX(0rem) translateY(-0.3125rem);
+        }
+    
+        &:active {
+            color:lighten($main-btn-bg-color, 25%);
+            border-color:$main-btn-bg-color;
+            transform: translateX(0rem) translateY(.125rem);
+        } 
+    }
+
+    &__social-icon:nth-child(1){
+        margin-left: 0rem;
+    }
+
+    &__copyright{
+        text-align: right;
+        padding-top: 1rem;
+        @include respond-to(md){
+            text-align: center;
+        }
+    }
+
+    &__attribution{
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    &__bold{
+        font-weight: bold;
+    }
+
+}
+

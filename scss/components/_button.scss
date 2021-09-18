@@ -1,0 +1,61 @@
+@mixin button-base{
+    color:$color-white;
+    background:$main-btn-bg-color;
+    font-weight: $font-weight-bold;
+    display: inline-block;
+    text-decoration:none;
+    border-radius: 2em;
+    padding: 0.75rem 4rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+
+
+    &:hover {
+        background:lighten($main-btn-bg-color, 8%);
+        transform: translateX(0rem) translateY(-0.3125rem);
+    }
+
+    &:active {
+        background:lighten($main-btn-bg-color, 25%);
+        transform: translateX(0rem) translateY(.125rem);
+    } 
+}
+
+@mixin full-width-button{
+    @include button-base;
+    display: block !important;
+    width: 100% !important;
+}
+
+.button--primary{
+    @include button-base;
+}
+
+.button--secondary{
+    @include button-base;
+    background-color: $secondary-btn-bg-color;
+    color: $secondary-btn-txt-color;
+
+    @include respond-to(xs){
+        padding: 0.75rem 1.5rem;
+        width: 50%;
+    }
+
+    &:hover,&:active {
+        background:lighten($secondary-btn-bg-color, 8%);
+        color: $regent-gray;
+    }
+}
+
+.links{
+    transition: all 0.3s ease;
+
+    &:hover, &:active {
+        color:lighten($lily-white, 20%);
+        text-decoration: underline;
+    }
+}
+
+
+

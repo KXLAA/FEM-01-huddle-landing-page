@@ -1,0 +1,12 @@
+.nav{
+    @include flex-center-vert;
+    justify-content: space-between;
+    padding-bottom: 3.5rem;
+
+    &__logo-img{
+        @include respond-to(xs){
+            width: 75%;
+        }
+    }
+
+}

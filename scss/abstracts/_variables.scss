@@ -1,0 +1,54 @@
+/// **** FONT VARIABLES **** ///
+
+//Font family
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-family-sans-serif-2: 'Poppins', sans-serif;
+
+//Body Font Sizes
+$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+$font-size-sm:                $font-size-base * .875;
+$font-size-lg:                $font-size-base * 1.25;
+
+//Line Heights
+$line-height-base:            1.5;
+$line-height-sm:              1.25;
+
+
+//Heading Font Sizes
+$h1-font-size:                4.25rem;              //  68px
+$h2-font-size:                3rem;                 //  48px
+$h3-font-size:                2rem;                 //  32px
+$h4-font-size:                1.625rem;             //  26px
+$h5-font-size:                $font-size-base;      //  16px
+
+
+//Font Weights
+$font-weight-lighter:         lighter;
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-bold:            700;
+$font-weight-bolder:          bolder;
+$font-weight-base:            $font-weight-normal;
+
+
+//COLORS VARIABLES 
+
+// Descriptive naming
+$color-black:#000000;
+$color-white:#FFFFFF;
+$lily-white:#EBFBFF;
+$hot-pink:#FF52BF;
+$daintree:#00252e;
+$regent-gray:#808D99;
+
+
+
+
+// Functional naming
+$heading-color: $daintree;
+$body-color: $daintree;
+$border-color:$color-black;
+$header-bg-color:$lily-white;
+$main-btn-bg-color:$hot-pink;
+$secondary-btn-bg-color:$color-white;
+$secondary-btn-txt-color:$daintree;
