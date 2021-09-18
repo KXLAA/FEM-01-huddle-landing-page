@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](hhttps://github.com/KXLAA/FEM-01-huddle-landing-page.git)
-- Live Site URL: [Add live site URL here](https://kxlaa.github.io/FEM-01-huddle-landing-page/#)
+- Solution URL: [Github Repo](https://github.com/KXLAA/FEM-01-huddle-landing-page.git)
+- Live Site URL: [Live Preview](https://kxlaa.github.io/FEM-01-huddle-landing-page/#)
 
 ## My process
 
