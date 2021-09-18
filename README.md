@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](hhttps://github.com/KXLAA/FEM-01-huddle-landing-page.git)
+- Live Site URL: [Add live site URL here](https://kxlaa.github.io/FEM-01-huddle-landing-page/#)
 
 ## My process
 
@@ -129,9 +129,9 @@ This project was good in practicing how to organize my scss efficiently. Althoug
 
 ### Useful resources
 
-- [Matthew Elsom's Blog](https://matthewelsom.com/blog/simple-scss-playbook.html) - This gave me a strong foundation for implementing the 4-1 scss architecture i utilise in the project. I really liked the approach and will use it going forward.
+- [Matthew Elsom's Blog](https://matthewelsom.com/blog/simple-scss-playbook.html) - This gave me a strong foundation for implementing the 4-1 scss architecture i utilized in the project. I really liked the approach and will use it going forward.
 
-- [Sitepoint](hhttps://www.sitepoint.com/managing-responsive-breakpoints-sass/) - This is an amazing article which helped me understand how to use make scalable media queries with scss. I'd recommend it to anyone still trying to come to grips to how to efficiently implement scss mixins with media queries.
+- [Sitepoint](https://www.sitepoint.com/managing-responsive-breakpoints-sass/) - This is an amazing article which helped me understand how to use make scalable media queries with scss. I'd recommend it to anyone still trying to come to grips to how to efficiently implement scss mixins with media queries.
 
 
 ## Author
