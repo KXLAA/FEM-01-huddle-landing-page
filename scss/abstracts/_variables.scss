@@ -6,8 +6,9 @@ $font-family-sans-serif-2: 'Poppins', sans-serif;
 
 //Body Font Sizes
 $font-size-base:              1rem; // Assumes the browser default, typically `16px`
-$font-size-sm:                $font-size-base * .875;
-$font-size-lg:                $font-size-base * 1.25;
+$font-size-sm:                $font-size-base * .875;           // 14px
+$font-size-md:                $font-size-base * 1.125;          // 18px
+$font-size-lg:                $font-size-base * 1.25;           //  20px
 
 //Line Heights
 $line-height-base:            1.5;
@@ -44,11 +45,18 @@ $regent-gray:#808D99;
 
 
 
+
+
+
 // Functional naming
 $heading-color: $daintree;
-$body-color: $daintree;
+$body-main-color: $daintree;
 $border-color:$color-black;
 $header-bg-color:$lily-white;
 $main-btn-bg-color:$hot-pink;
 $secondary-btn-bg-color:$color-white;
 $secondary-btn-txt-color:$daintree;
+$cta-bg-color:$color-white;
+$button-txt-color:$color-white;
+$footer-bg-color:$daintree;
+$footer-txt-color:$lily-white;

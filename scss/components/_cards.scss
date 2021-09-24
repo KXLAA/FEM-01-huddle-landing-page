@@ -1,18 +1,9 @@
 .card{
     padding: 3rem;
     margin-bottom: 3.5rem;
-    box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
+    box-shadow: 0 .2rem 1rem rgb(0 0 0 / 15%);
     border-radius: 1em;
     @include flex-center-vert;
-
-    @include respond-to(md){
-        @include flex-column;
-        padding: 2rem;
-    }
-
-    @include respond-to(xs){
-        padding: 1.5rem;
-    }
 
     &--last{
         margin-bottom: 0rem;
@@ -21,32 +12,14 @@
     &--switch{
         @include flex-center-vert;
         flex-direction: row-reverse;
-
-        @include respond-to(md){
-            @include flex-column;
-
-        }
     }
 
     &__heading{
         margin-bottom: 1rem;
-
-        @include respond-to(md){
-            text-align: center;
-        }
     }
 
     &__txt-box{
         padding: 4rem;
-
-        @include respond-to(md){
-            padding: 2.5rem;
-            text-align: center;
-        }
-
-        @include respond-to(xs){
-            padding: 1rem;
-        }
     }
 
     &__img-box, 
@@ -57,7 +30,42 @@
 
     &__img-box{
         margin-left: 6rem;
+    }
 
+    &__img-box--switch{
+        margin-right: 6rem;
+    }
+
+    /**************************/
+    /* BELOW 992px (Small Laptop) */
+    /**************************/
+
+    @include respond-to(md){
+        @include flex-column;
+        padding: 2rem;
+    }
+
+    &--switch{
+        @include respond-to(md){
+            @include flex-column;
+
+        }
+    }
+
+    &__heading{
+        @include respond-to(md){
+            text-align: center;
+        }
+    }
+
+    &__txt-box{
+        @include respond-to(md){
+            padding: 2.5rem;
+            text-align: center;
+        }
+    }
+
+    &__img-box{
         @include respond-to(md){
             margin-right: 0rem;
             margin: 0 auto;
@@ -65,13 +73,30 @@
     }
 
     &__img-box--switch{
-        margin-right: 6rem;
-
         @include respond-to(md){
             margin-right: 0rem;
             margin: 0 auto;
         }
  
     }
+
+    /**************************/
+    /* BELOW 480px (Mobile) */
+    /**************************/
+    @include respond-to(xs){
+        padding: 1.5rem;
+    }
+
+    &__txt-box{
+        @include respond-to(xs){
+            padding: 1rem;
+        }
+    }
+
+
+
+
+
+
     
 }

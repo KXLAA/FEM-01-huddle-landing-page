@@ -42,39 +42,66 @@ $heading-fs: (
   @include heading(sub-heading);
  }
 
+
 /// **** BODY FONT STYLES **** ///
+
 $body-fs: (
   base: $font-size-base,        // 16px
-  sm: $font-size-base * .875,   // 14px
-  lg: $font-size-base * 1.125    // 18px
+  sm: $font-size-sm,            // 14px
+  md:  $font-size-md,           // 18px
+  lg:  $font-size-lg           //  20px
 )!default;
   
   
-@mixin body-base($weight:400, $color: $body-color){
+@mixin body-base{
   font-family: $font-family-sans-serif;
-  font-size: map-get($body-fs, lg);
+  font-size: map-get($body-fs, md);
   font-weight: $font-weight-normal;
   line-height: $line-height-base;
-  color: $color
 }
 
 
 @mixin body($style) {
-  @if $style == "main-body" {
+  @if $style == "main" {
     @include body-base;
+    color: $body-main-color;
   }
 
-  @else if $style == "main-body--black" {
-    @include body-base($weight, $color);
+  @else if $style == "small" {
+    @include body-base;
+    color: $body-main-color;
+    font-size: map-get($body-fs, base);
   }
 
+  @else if $style == "bold" {
+    @include body-base;
+    font-weight:$font-weight-bold;
+    color: $body-main-color;
+
+  }
+
+  @else if $style == "bold--lg" {
+    @include body-base;
+    font-weight:$font-weight-bold;
+    font-size: map-get($body-fs, lg);
+    color: $body-main-color;
+  }
 }
 
-// // USAGE
-// // @include body(main-body)
-// // @include body(main-body__bold--black)
+// ===== Usage ===== //
 
-body{
-  @include body(main-body);
+.body--main{
+  @include body(main);
 }
+
+.body--small{
+  @include body(small);
+}
+
+.body--bold{
+  @include body(bold);
+}
+
+
+
 

@@ -48,13 +48,13 @@ Users should be able to:
 
 ### What I learned
 
-This was a fairly straight forward challenge, i utilized the BEM naming Methodology in combination with scss as i found that it provided the best way to make my CSS styles modular and reusable. I also utilized a 4-1 scss architecture inspired by **Matthew Elsom** to keep all my scss files organized. Implementing such an architecture helped in the modularity and reusability of my styles as mentioned above. 
+This was a fairly straight forward challenge, i utilized the BEM naming Methodology in combination with scss as i found that it provided the best way to make my CSS styles modular and reusable. I also utilized a 4-1 scss architecture inspired by **Matthew Elsom** to keep all my scss files organized. Implementing such an architecture helped in the modularity and reusability of my styles as mentioned above.
 
 On of the code snippets that illustrate this modular and reuseable approach the best i believe is the mixin i created for my button styles:
 
 ```SCSS
 @mixin button-base{
-    color:$color-white;
+    color:$button-txt-color;
     background:$main-btn-bg-color;
     font-weight: $font-weight-bold;
     display: inline-block;
@@ -88,16 +88,6 @@ With this mixin i defined the base styles for my button with the active & hover 
     @include button-base;
     background-color: $secondary-btn-bg-color;
     color: $secondary-btn-txt-color;
-
-    @include respond-to(xs){
-        padding: 0.75rem 1.5rem;
-        width: 50%;
-    }
-
-    &:hover,&:active {
-        background:lighten($secondary-btn-bg-color, 8%);
-        color: $regent-gray;
-    }
 }
 ```
 

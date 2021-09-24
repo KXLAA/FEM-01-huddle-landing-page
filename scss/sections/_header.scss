@@ -10,14 +10,40 @@
     height: 100%;
     width: 100%;
 
+    /**************************/
+    /* BELOW 480px (Mobile) */
+    /**************************/
+
     @include respond-to(xs){
         padding-top: 1.5rem;
     }
+    
 }
+
 
 .hero{
     @include flex-center-vert;
 
+    &__img-box{
+        width: 140%;
+    }
+
+    &__heading{
+        margin-bottom: 2rem;
+    }
+
+    &__para{
+        margin-bottom: 2rem;
+    }
+
+    &__txt-box{
+        margin-right: 3.5rem;
+
+    }
+
+    /**************************/
+    /* BELOW 768px (Tablet) */
+    /**************************/
     @include respond-to (sm){
         @include flex-center-column;
         text-align: center;
@@ -25,35 +51,32 @@
     }
 
     &__img-box{
-        width: 140%;
-
         @include respond-to (sm){
              width: 100%;
             margin-top: 3rem;
         }
     }
 
-    &__heading{
-        margin-bottom: 2rem;
+    &__txt-box{
+        @include respond-to (sm){
+            margin-right: 0rem;
+        }
+    }
 
+    /**************************/
+    /* BELOW 480px (Mobile) */
+    /**************************/
+    &__heading{
         @include respond-to(xs){
             margin-bottom: 1.5rem;
         }
     }
 
     &__para{
-        margin-bottom: 2rem;
-
         @include respond-to(xs){
             margin-bottom: 1.5rem;
         }
     }
 
-    &__txt-box{
-        margin-right: 3.5rem;
 
-        @include respond-to (sm){
-            margin-right: 0rem;
-        }
-    }
 }
